@@ -1,0 +1,40 @@
+<!-- 01.jq_selector_css.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+   <script>
+       // $(document).ready(function(){
+       $(function(){
+           /*
+           let h1 = document.getElementById("h1");        
+           h1.style.color = 'lightgreen';
+           */
+          $("#h1").css("color","red");
+          $("#h1").css("background-color","blue");
+
+
+          $(".h1").css("color","white");
+          $(".h1").css("backgroundColor","red");
+
+          $("h1").css("color","white");
+          $("h1").css("backgroundColor","lightgreen");
+       });
+   </script>
+</head>
+<body>
+   <!-- h1{Header-$$}*4 -->
+   <h1 class="h1">Header-01</h1>
+   <h1 class="h1">Header-02</h1>
+   <h1 class="h1" id="h1">Header-03</h1>
+   <h1 id="h1">Header-04</h1> 
+   <script>
+       let h1 = document.getElementById("h1");        
+       h1.style.color = 'lightgreen';
+       h1.style.backgroundColor = "yellow";
+   </script>
+</body>
+</html>
